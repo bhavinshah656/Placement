@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.11.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.11\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -65,7 +68,129 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adminhome.aspx" />
+    <Content Include="AdminLogin1.aspx" />
+    <Content Include="Appliedstudent.aspx" />
+    <Content Include="Apply_cmpy.aspx" />
+    <Content Include="Comapny Visited.aspx" />
+    <Content Include="Company_reg.aspx" />
+    <Content Include="Content\themes\base\accordion.css" />
+    <Content Include="Content\themes\base\all.css" />
+    <Content Include="Content\themes\base\autocomplete.css" />
+    <Content Include="Content\themes\base\base.css" />
+    <Content Include="Content\themes\base\button.css" />
+    <Content Include="Content\themes\base\core.css" />
+    <Content Include="Content\themes\base\datepicker.css" />
+    <Content Include="Content\themes\base\dialog.css" />
+    <Content Include="Content\themes\base\draggable.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_444444_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_555555_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777620_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777777_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\menu.css" />
+    <Content Include="Content\themes\base\progressbar.css" />
+    <Content Include="Content\themes\base\resizable.css" />
+    <Content Include="Content\themes\base\selectable.css" />
+    <Content Include="Content\themes\base\selectmenu.css" />
+    <Content Include="Content\themes\base\slider.css" />
+    <Content Include="Content\themes\base\sortable.css" />
+    <Content Include="Content\themes\base\spinner.css" />
+    <Content Include="Content\themes\base\tabs.css" />
+    <Content Include="Content\themes\base\theme.css" />
+    <Content Include="Content\themes\base\tooltip.css" />
+    <Content Include="css\default.css" />
+    <Content Include="css\ValidationEngine.css" />
+    <Content Include="imga\bg_infobox.gif" />
+    <Content Include="imga\h1.png" />
+    <Content Include="imga\overlay.png" />
+    <Content Include="img\banner.gif" />
+    <Content Include="img\work.jpg" />
     <Content Include="packages.config" />
+    <Content Include="Home.Master" />
+    <Content Include="image\4g communication.pdf" />
+    <Content Include="image\afteradecade.pdf" />
+    <Content Include="image\BIG DATA.pdf" />
+    <Content Include="image\BIG DATA2.pdf" />
+    <Content Include="image\Cloud Computing.pdf" />
+    <Content Include="image\face recognition.pdf" />
+    <Content Include="image\ijaf3-2.pdf" />
+    <Content Include="image\Image Procssing.pdf" />
+    <Content Include="image\kmrp20111a.pdf" />
+    <Content Include="image\kmrp20112a.pdf" />
+    <Content Include="image\Military.Medicine.Microarray.pdf" />
+    <Content Include="image\Technology in crime.pdf" />
+    <Content Include="image\TIME and information technology.pdf" />
+    <Content Include="image\US6351234.pdf" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\css" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\css%281%29" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\css%282%29" />
+    <Content Include="over\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="over\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="over\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="over\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="over\font-awesome\less\bordered-pulled.less" />
+    <Content Include="over\font-awesome\less\core.less" />
+    <Content Include="over\font-awesome\less\fixed-width.less" />
+    <Content Include="over\font-awesome\less\font-awesome.less" />
+    <Content Include="over\font-awesome\less\icons.less" />
+    <Content Include="over\font-awesome\less\larger.less" />
+    <Content Include="over\font-awesome\less\list.less" />
+    <Content Include="over\font-awesome\less\mixins.less" />
+    <Content Include="over\font-awesome\less\path.less" />
+    <Content Include="over\font-awesome\less\rotated-flipped.less" />
+    <Content Include="over\font-awesome\less\spinning.less" />
+    <Content Include="over\font-awesome\less\stacked.less" />
+    <Content Include="over\font-awesome\less\variables.less" />
+    <Content Include="over\font-awesome\scss\font-awesome.scss" />
+    <Content Include="over\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="over\font-awesome\scss\_core.scss" />
+    <Content Include="over\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="over\font-awesome\scss\_icons.scss" />
+    <Content Include="over\font-awesome\scss\_larger.scss" />
+    <Content Include="over\font-awesome\scss\_list.scss" />
+    <Content Include="over\font-awesome\scss\_mixins.scss" />
+    <Content Include="over\font-awesome\scss\_path.scss" />
+    <Content Include="over\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="over\font-awesome\scss\_spinning.scss" />
+    <Content Include="over\font-awesome\scss\_stacked.scss" />
+    <Content Include="over\font-awesome\scss\_variables.scss" />
+    <Content Include="over\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="over\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="over\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="over\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Admin.Master" />
+    <Content Include="PasswordReset.aspx" />
+    <Content Include="Placed Student.aspx" />
+    <Content Include="PlacedStudent.aspx" />
+    <Content Include="Queriesdisplay.aspx" />
+    <None Include="Scripts\jquery-1.12.4.intellisense.js" />
+    <Content Include="QueryRply.aspx" />
+    <Content Include="Scripts\jquery-1.12.4.js" />
+    <Content Include="Scripts\jquery-1.12.4.min.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Student.Master" />
+    <Content Include="Scripts\jquery-1.12.4.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -74,16 +199,260 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AboutUs.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="image\20160103_132926.jpg" />
+    <Content Include="image\20160103_141612.jpg" />
+    <Content Include="image\AniketNagane.jpg" />
+    <Content Include="image\Apurva-Mam.jpg" />
+    <Content Include="image\IMG_20141227_073538.jpg" />
+    <Content Include="image\NileshMagar.jpg" />
+    <Content Include="image\PGCS-Neha-Kane.jpg" />
+    <Content Include="image\PGCS-Renuka-Zope.jpg" />
+    <Content Include="image\prof.mali-small.jpg" />
+    <Content Include="image\ShubhangiMam.jpg" />
+    <Content Include="img\address_icon.png" />
+    <Content Include="img\b12.jpg" />
+    <Content Include="img\Desktop-Background-3.jpg" />
+    <Content Include="img\mgt.jpg" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\add-to-cart.minc0b8.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\akansha.jpg" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\cart-fragments.minc0b8.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\comment-reply.min0235.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\core.animation.min.css" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\core.init.min.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\core.messages.min.css" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\core.messages.min.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\core.portfolio.min.css" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\core.utils.min.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\douglas_adams_full-400x225.jpg" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\DSC_004.JPG" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\f.txt" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\fontello.min.css" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\front.customizer.min.css" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\front.customizer.min.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\idangerous.swiper-2.7.min.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\idangerous.swiper.min.css" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\idangerous.swiper.scrollbar-2.4.min.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\IMG_3562.JPG" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\isotope.pkgd.minc1f9.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\ISP.jpg" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\jquery-migrate.min1576.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\jquery.blockUI.minc8cb.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\jquery.cookie.min330a.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\jquery.hoverdir.min.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\jquery.prettyPhoto.minca7f.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\jquery.slidemenu.min.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\jquery.themepunch.revolution.min1dc6.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\jquery.themepunch.tools.min1dc6.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\jquery90f9.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\js_composerc1f9.css" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\js_composer_frontc1f9.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\Lalji.JPG" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\latest.png" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\logo1.png" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\logo2.png" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\logo3.png" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\logo4.png" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\logo5.png" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\logo6.png" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\maeers-logo1.png" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\masonry_06-75x75.jpg" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\mediaelement-and-player.min4165.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\mediaelementplayer.min4165.css" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\nikita.jpg" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\Piyush.jpg" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\prettyPhoto.min.css" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\prism.jpg" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\responsive.min.css" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\settings1dc6.css" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\shortcodes.min.css" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\shortcodes.min.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\skin-responsive.min.css" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\skin.customizer.min.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\skin.min.css" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\style.min.css" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\superfish.min.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\Technocrat%2715.JPG" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\tribe-style.min.css" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\woocommerce-layoutc0b8.css" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\woocommerce-smallscreenc0b8.css" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\woocommerce.minc0b8.js" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\woocommercec0b8.css" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\wp-mediaelement0235.css" />
+    <Content Include="MAEER%27s Arts, Commerce and Science College, Pune_files\wp-mediaelement0235.js" />
+    <Content Include="over\css\bootstrap.css" />
+    <Content Include="over\css\bootstrap.min.css" />
+    <Content Include="over\css\stylish-portfolio.css" />
+    <Content Include="over\font-awesome\css\font-awesome.css" />
+    <Content Include="over\font-awesome\css\font-awesome.min.css" />
+    <Content Include="over\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="over\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="over\img\bg.jpg" />
+    <Content Include="over\img\callout.jpg" />
+    <Content Include="over\img\portfolio-1.jpg" />
+    <Content Include="over\img\portfolio-2.jpg" />
+    <Content Include="over\img\portfolio-3.jpg" />
+    <Content Include="over\img\portfolio-4.jpg" />
+    <Content Include="over\js\bootstrap.js" />
+    <Content Include="over\js\bootstrap.min.js" />
+    <Content Include="over\js\jquery.js" />
+    <Content Include="Queries.aspx" />
+    <Content Include="Student_reg.aspx" />
+    <Content Include="stud_passwordreset.aspx" />
+    <Content Include="stud_profile.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminhome.aspx.cs">
+      <DependentUpon>adminhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminhome.aspx.designer.cs">
+      <DependentUpon>adminhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin1.aspx.cs">
+      <DependentUpon>AdminLogin1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin1.aspx.designer.cs">
+      <DependentUpon>AdminLogin1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appliedstudent.aspx.cs">
+      <DependentUpon>Appliedstudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appliedstudent.aspx.designer.cs">
+      <DependentUpon>Appliedstudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Apply_cmpy.aspx.cs">
+      <DependentUpon>Apply_cmpy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Apply_cmpy.aspx.designer.cs">
+      <DependentUpon>Apply_cmpy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comapny Visited.aspx.cs">
+      <DependentUpon>Comapny Visited.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comapny Visited.aspx.designer.cs">
+      <DependentUpon>Comapny Visited.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company_reg.aspx.cs">
+      <DependentUpon>Company_reg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company_reg.aspx.designer.cs">
+      <DependentUpon>Company_reg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="db.cs" />
+    <Compile Include="PasswordReset.aspx.cs">
+      <DependentUpon>PasswordReset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasswordReset.aspx.designer.cs">
+      <DependentUpon>PasswordReset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Placed Student.aspx.cs">
+      <DependentUpon>Placed Student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Placed Student.aspx.designer.cs">
+      <DependentUpon>Placed Student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlacedStudent.aspx.cs">
+      <DependentUpon>PlacedStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlacedStudent.aspx.designer.cs">
+      <DependentUpon>PlacedStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Queries.aspx.cs">
+      <DependentUpon>Queries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Queries.aspx.designer.cs">
+      <DependentUpon>Queries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Queriesdisplay.aspx.cs">
+      <DependentUpon>Queriesdisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Queriesdisplay.aspx.designer.cs">
+      <DependentUpon>Queriesdisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryRply.aspx.cs">
+      <DependentUpon>QueryRply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QueryRply.aspx.designer.cs">
+      <DependentUpon>QueryRply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student.Master.cs">
+      <DependentUpon>Student.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student.Master.designer.cs">
+      <DependentUpon>Student.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Student_reg.aspx.cs">
+      <DependentUpon>Student_reg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student_reg.aspx.designer.cs">
+      <DependentUpon>Student_reg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="stud_passwordreset.aspx.cs">
+      <DependentUpon>stud_passwordreset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="stud_passwordreset.aspx.designer.cs">
+      <DependentUpon>stud_passwordreset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="stud_profile.aspx.cs">
+      <DependentUpon>stud_profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="stud_profile.aspx.designer.cs">
+      <DependentUpon>stud_profile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.Master.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.Master.designer.cs">
+      <DependentUpon>Home.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
